@@ -1,13 +1,44 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de Texto</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
+    <header>
+        <img class="logo-alura" src="./assets/logoAlura.svg" alt="Logo Alura">
+    </header>
+    <main class="container">
+        <section>
+        <textarea class="container__encrypt-textarea" cols="40" rows="10" placeholder="Digite seu texto"></textarea>
+            <div class="container__info">
+                <h6>Apenas letras minúsculas e sem acento.</h6>
+            </div>
+            <div class="container__btn">
+                <button class="btn-encrypt">Criptografar</button>
+                <button class="btn-decrypt">Descriptografar</button>  
+            </div>       
+        </section>
+
+        <section>
+            <div class="container__message">
+                <div class="container__message__textarea">
+                    <textarea class="container__message-textarea__item" cols="15" rows="5"></textarea>
+                    <button class="btn-copy">Copiar </button>
+                </div>
+                <div class="container__message__info">
+                    <img class="container__message__img" src="./assets/imagemInfo.png" alt="Imagem da mensagem de informação">
+                    <span class="container__message__info__text1" >Nenhuma mensagem encontrada</span> <br>
+                    <span class="container__message__info__text2">Digite um texto que você deseja criptografar ou descriptografar.</span>
+                </div>
+            </div>
+        </section>
+       
+    </main>
+        
+        
     <footer></footer>
 </body>
 </html>
