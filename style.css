@@ -19,17 +19,18 @@
     font-family: var(--font-primary);
 }
 body {
+    box-sizing: border-box;
     background-color: var(--primary--color);
 }
 
 
-.logo-alura {
-    padding: 1%;
+.logo {
+    padding: 3% 0% 0% 3%;
 }
 .container {
     display: flex;
+    padding: 5% 10%;
     justify-content: center;
-    gap: 50px;
 }
 
 textarea {
@@ -45,7 +46,7 @@ textarea:focus {
     outline: none;
 
 }
-.container__encrypt-textarea {
+.container__encrypt__textarea {
     background-color: var(--primary--color);
     color: var(--secundary-color);
     
@@ -69,23 +70,23 @@ textarea:focus {
     display: flex;
     gap: 24px;
 }
-.btn-encrypt {
-    background-color: var(--secundary-color);
+
+.btn {
     border: none;
     width: 328px;
     height: 67px;
     border-radius: 24px;
     font-size: 1rem;
+
+}
+.btn-encrypt {
+    background-color: var(--secundary-color);
     color: var(--quartenary-color)
 }
 
 .btn-decrypt {
     background-color: var(--tertiary-color);
     border: 1px solid var(--secundary-color);
-    width: 328px;
-    height: 67px;
-    border-radius: 24px;
-    font-size: 1rem;
     color: var(--secundary-color)
 }
 
@@ -97,9 +98,9 @@ textarea:focus {
 }
 
 .container__message__textarea {
-    display: flex;
     flex-direction: column;
     align-items: center;
+    display: none;
 }
 
 .container__message-textarea__item {
@@ -110,14 +111,11 @@ textarea:focus {
     border-radius: 32px;
     font-size: 1.5rem;
     color: var(--quinary-color)
+    
 }
 
 .btn-copy {
     border: 1px solid var(--secundary-color);
-    width: 328px;
-    height: 67px;
-    border-radius: 24px;
-    font-size: 1rem;
     color: var(--secundary-color);
     margin-top: 26%;
 }
@@ -127,8 +125,6 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    display:none;
-
 }
 .container__message__img {
     width: 336px;
@@ -150,4 +146,9 @@ textarea:focus {
     text-align: center;
     color: #495057;
 }
-
+footer {
+    background-color: var(--secundary-color);
+    padding: 24px;
+    text-align: center;
+    color: var(--quartenary-color);
+}
