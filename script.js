@@ -18,9 +18,10 @@ function showMessage() {
 
 function encrypt() {
     showMessage();
-    const textEncrypted = encryptMessage(messageNotEncrypted.value.toLowerCase());
-    textNormalized = textEncrypted.normalize('NFD').replaceAll(/[\u0300-\u036f]/g, "");
-    messageEncrypeted.value = textNormalized;
+    const textEncrypted = messageNotEncrypted.value.toLowerCase();
+    const textNormalized = textEncrypted.normalize('NFD').replaceAll(/[\u0300-\u036f]/g, "");
+    const message = encryptMessage(textNormalized);
+    messageEncrypeted.value = message;
     messageNotEncrypted.value = "";
 
 }

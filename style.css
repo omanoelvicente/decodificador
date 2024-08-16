@@ -152,3 +152,46 @@ footer {
     text-align: center;
     color: var(--quartenary-color);
 }
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 5% 5%;
+    }
+    
+    .container__btn {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container__message {
+        width: auto;
+        padding: 3%;
+        margin-top: 30px;
+
+    }
+
+    .container__message-textarea__item {
+        height: auto;
+    }
+
+    .btn-copy {
+        width: 279px;
+        margin: 32px;
+    }
+
+
+    .container__encrypt__textarea {
+        width: 90vw;
+        height: auto;
+    }
+
+    .container__message__info {
+        width: auto;
+    }
+
+    .container__message__img {
+        display: none;
+    }
+
+}
