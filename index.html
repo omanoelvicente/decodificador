@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html> 
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -8,25 +8,25 @@
 </head>
 <body>
     <header>
-        <img class="logo-alura" src="./assets/logoAlura.svg" alt="Logo Alura">
+        <img class="logo" src="./assets/logoAlura.svg" alt="Logo Alura">
     </header>
     <main class="container">
         <section>
-        <textarea class="container__encrypt-textarea" cols="40" rows="10" placeholder="Digite seu texto"></textarea>
+        <textarea class="container__encrypt__textarea" cols="40" rows="10" placeholder="Digite seu texto"></textarea>
             <div class="container__info">
                 <h6>Apenas letras minúsculas e sem acento.</h6>
             </div>
             <div class="container__btn">
-                <button class="btn-encrypt">Criptografar</button>
-                <button class="btn-decrypt">Descriptografar</button>  
+                <button class="btn btn-encrypt" onclick="encrypt()">Criptografar</button>
+                <button class="btn btn-decrypt" onclick="decrypt()">Descriptografar</button>  
             </div>       
         </section>
 
         <section>
             <div class="container__message">
                 <div class="container__message__textarea">
-                    <textarea class="container__message-textarea__item" cols="15" rows="5"></textarea>
-                    <button class="btn-copy">Copiar </button>
+                    <textarea class="container__message-textarea__item" cols="15" rows="5" readonly></textarea>
+                    <button class="btn btn-copy" onclick="copyMessage()">Copiar </button>
                 </div>
                 <div class="container__message__info">
                     <img class="container__message__img" src="./assets/imagemInfo.png" alt="Imagem da mensagem de informação">
@@ -39,6 +39,10 @@
     </main>
         
         
-    <footer></footer>
+    <footer>
+       <p>Desenvolvido por Manoel Vicente.</p> 
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
